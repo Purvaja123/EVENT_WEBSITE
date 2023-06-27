@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>INSPIRE 2023</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.svg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" class="active">About</a></li>
+				<li><a href="courses.html">Events</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			About INSPIRE 2023
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+
+	<!-- About section starts from here -->
+	<section id="about-container">
+		<div class="about-img">
+			<img src="img/a.png" alt="">
+		</div>
+		<div class="about-text">
+			<h2>
+				Welcome to INSPIRE 2023
+			</h2>
+			<p>
+				Get ready for an inspiring experience filled with valuable insights, networking opportunities, and memorable moments. We look forward to connecting and learning together!"
+			</p>
+
+			<div class="about-fe">
+				<img src="img/fe1.png" alt="">
+				<div class="fe-text">
+					<h5>10+ Events</h5>
+					<p>
+						You can participate in both Technical and Non-Technical events
+					</p>
+				</div>
+			</div>
+			<div class="about-fe">
+				<img src="img/fe2.png" alt="">
+				<div class="fe-text">
+					<h5>1 Lakh Cash prizes</h5>
+					<p>
+						You can participate and grab the cash prizes
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About section ends from here -->
+
+
+	<!-- Features section starts from here -->
+	<section id="features">
+		<h1>EVENTS</h1>
+
+		<div class="fea-base">
+			<div class="fea-box">
+				<i class="fas fa-graduation-cap"></i>
+				<h3>TECHNICAL EVENTS</h3>
+				<p>
+					Paper Presentation<br><br>
+					Project Presentation<br><br>
+					Idea Presentation<br><br>
+					CAD Modelling<br><br>
+					Circuit Debugging<br><br>
+					Web Designing<br><br>
+				</p>
+			</div>
+
+			<div class="fea-box">
+				<i class="fa-solid fa-book-bookmark"></i>
+				<h3>NON-TECHNICAL EVENTS</h3>
+				<p>
+					WonderFest<br><br>
+					DreamScape<br><br>
+					IgniteFest<br><br>
+					PowerUp<br><br>
+					RiseUp<br><br>
+					SparkSprint<br><br>
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- Features section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
